@@ -74,7 +74,7 @@ const Login = async(req, res)=>{
 
         const token = await genToken(userExist._id);
 
-        const user = await User.findById(userExist._id);
+        const user = await User.findById(userExist._id).select("-password");
 
         res.cookie("token", token, {
             secure: true,
