@@ -38,8 +38,8 @@ const Signup = async(req, res) =>{
         const user = await User.findById(userCreated._id).select("-password");
 
         res.cookie("token", token, {
-            secure: false,
-            sameSite: "lax",
+            secure: true,
+            sameSite: "None",
             httpOnly: true,
             maxAge: 7 * 24 * 60 * 60 * 1000
         })
@@ -77,9 +77,9 @@ const Login = async(req, res)=>{
         const user = await User.findById(userExist._id);
 
         res.cookie("token", token, {
-            secure: false,
+            secure: true,
             httpOnly: true,
-            sameSite: "lax",
+            sameSite: "None",
             maxAge: 7 * 24 * 60 * 60 * 1000
         })
 
