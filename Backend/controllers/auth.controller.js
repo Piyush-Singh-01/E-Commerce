@@ -17,6 +17,7 @@ const getUser = async(req, res)=>{
 
 const Signup = async(req, res) =>{
     try {
+        console.log(req.body);
         const {username, email, password} = req.body;
 
         const userExist = await User.findOne({email});
@@ -58,6 +59,7 @@ const Signup = async(req, res) =>{
 
 const Login = async(req, res)=>{
       try {
+        console.log(req.body);
         const {email, password} = req.body;
 
         const userExist = await User.findOne({email});
