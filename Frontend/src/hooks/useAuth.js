@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { getCurrentUser, loginUser, logoutUser, signupUser} from "../api/AuthApi";
+import { getCurrentUser, loginUser, logoutUser, signupUser} from "../api/authApi";
  
 import { setLoading } from "../redux/slice/productSlice";
 
