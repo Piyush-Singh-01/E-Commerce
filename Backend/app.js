@@ -17,7 +17,10 @@ const userRoutes = require("./routes/user.routes.js");
 const app = express();
 
 app.use(cors({
-    origin: "https://cartify-eosin-chi.vercel.app",
+    origin: [
+        "https://cartify-eosin-chi.vercel.app",
+        "http://localhost:5173"
+    ],
     credentials: true
 }))
 
