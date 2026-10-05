@@ -101,12 +101,12 @@ function Home() {
 
               <div className="flex items-center gap-8 mt-12">
                 <div>
-                  <p className="text-2xl font-bold">10k+</p>
+                  <p className="text-2xl font-bold">10+</p>
                   <p className="text-sm text-gray-500">Happy Customers</p>
                 </div>
                 <div className="h-10 w-px bg-gray-300" />
                 <div>
-                  <p className="text-2xl font-bold">500+</p>
+                  <p className="text-2xl font-bold">100+</p>
                   <p className="text-sm text-gray-500">Premium Products</p>
                 </div>
                 <div className="h-10 w-px bg-gray-300" />
