@@ -6,8 +6,6 @@ function RelatedProducts({relatedProducts}) {
 
   const navigate = useNavigate()
 
-  console.log(relatedProducts);
-
   return (
     <section className="mt-10 w-full">
 

@@ -6,7 +6,7 @@ const axiosInstance = axios.create({
 });
 
 // const axiosInstance = axios.create({
-//     baseURL: "http://locahost:3000/api",
+//     baseURL: "http://localhost:3000/api",
 //     withCredentials: true
 // });
 

@@ -177,43 +177,6 @@ function ProductInfo({product, discountPercentage}) {
 
       </div>
 
-      {/* QUANTITY */}
-      {/* {!isOutOfStock && isAdded && (
-        <div className="mt-6">
-
-          <p className="mb-2 text-sm font-semibold text-gray-900">
-            Quantity
-          </p>
-
-          <div className="flex w-fit items-center overflow-hidden rounded-xl border border-gray-300">
-
-            <button
-              type="button"
-              onClick={decreaseQuantity}
-              disabled={quantity <= 1}
-              className="flex h-11 w-11 shrink-0 items-center justify-center text-gray-600 transition hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              <FaMinus size={11} />
-            </button>
-
-            <span className="flex h-11 w-14 shrink-0 items-center justify-center border-x border-gray-300 text-sm font-semibold text-gray-900">
-              {quantity}
-            </span>
-
-            <button
-              type="button"
-              onClick={increaseQuantity}
-              disabled={quantity >= product?.stock}
-              className="flex h-11 w-11 shrink-0 items-center justify-center text-gray-600 transition hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              <FaPlus size={11} />
-            </button>
-
-          </div>
-
-        </div>
-      )} */}
-
       {/* ACTION BUTTONS */}
       <div className="mt-7 grid gap-3 grid-cols-1 sm:grid-cols-2">
 
